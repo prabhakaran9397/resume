@@ -1,142 +1,124 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Graduate Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
-%----------------------------------------------------------------------------------------
-%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-\usepackage{hyperref}
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\documentclass[10pt,a4paper,sans	]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{}{\Huge{Prabhakaran Senthilnathan}}
+\title{}                               % optional, remove / comment the line if not wanted
+%\address{my address, line 1, line 2, line 3, postcode}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 720-021-0789}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{prabhakaran9397@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\{\href{https://www.linkedin.com/in/prabhakaran9397/}{LinkedIn}, \href{https://github.com/prabhakaran9397/}{GitHub}\}://\href{https://www.google.co.in/search?q=prabhakaran9397}{prabhakaran9397}}% optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 \begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{\LARGE{Areas of Interest}}
+\vspace{6pt}
+\Large{Algorithms \& Data Structures, Development \& Operations, Web Crawling and Data Wrangling}
+\section{\LARGE{Education}}
 
-%----------------------------------------------------------------------------------------
-%   NAME AND CONTACT SECTION
-%----------------------------------------------------------------------------------------
-\moveleft.5\hoffset\centerline{\LARGE\bf \href{https://www.google.co.in/search?q=Prabhakaran+Senthilnathan}{Prabhakaran Senthilnathan}} % Your name at the top
-\moveleft.5\hoffset\centerline{(+91) 72-0021-0789}
-\moveleft.5\hoffset\centerline{prabhakaran9397@gmail.com}
-\moveleft.5\hoffset\centerline{\{\href{https://www.linkedin.com/in/prabhakaran9397/}{LinkedIn}, \href{https://github.com/prabhakaran9397/}{GitHub}\}://\href{https://www.google.co.in/search?q=prabhakaran9397}{prabhakaran9397}}
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+\vspace{5pt}
 
-\begin{resume}
-%----------------------------------------------------------------------------------------
-%   OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
-\section{OBJECTIVE}
-To work in a challenging and mutually beneficial environment that provides generous opportunities for learning, solving and innovating.
-%----------------------------------------------------------------------------------------
-%   EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-\section{EDUCATION}
-{\bf College of Engineering, Guindy} \hfill 2014 - 2018 \\
-{\sl Bachelor of Engineering in Computer Science} \\
-{CGPA - \textbf{8.66} (upto 6th Semester)} \\
+\textbf\Large{College of Engineering, Guindy} \hfill 2014 - 2018 \\
+\textit{Bachelor of Engineering in Computer Science} \\
+CGPA - \textbf{8.67} (upto 6th Semester) \\
 \\
-{\bf Sri Sitaram Vidyalaya Mat. Hr. Sec. School} \hfill 2002 - 2014 \\
-{\sl XII - Higher Secondary Examination} - {\textbf{94.58 \%}} \\
-{\sl X - Secondary Examination} - {\textbf{96.00 \%}}
-%----------------------------------------------------------------------------------------
-%   TECHNICAL SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\section{TECHNICAL \\ SKILLS} 
-    {\sl Programming Languages:} C, C++, Ruby, Python, Java, PHP \\
-{\sl Markup Languages:} HTML, Markdown, LaTeX \\
-{\sl Frameworks:} Ruby on Rails, Python-Flask, ExpressJS \\
-{\sl Databases:} MySQL, MongoDB \\
-{\sl Tools:} Git, Vim, Lex, Yacc
-%----------------------------------------------------------------------------------------
-%       INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-\section{AREA OF INTEREST}
-\begin{itemize}
-\item Algorithms and Data Structures
-\item Operating Systems
-\item Web development
-\end{itemize}
-%----------------------------------------------------------------------------------------
-%   EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\section{EXPERIENCE}
-{\sl Summer Internship } \hfill May 2017 - June 2017 \\
-{\bf CaratLane Private Limited} \\
-API Development for CRM Software and Optimization of backend architechture \\
-Software used: Ruby on Rails, MySQL, ElasticSearch
-%----------------------------------------------------------------------------------------
-%   PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\section{PROJECTS}
-{\sl AI ChatBot - Using Deep Learning} \hfill Jan 2017 - Mar 2017 \\
-An AI chatbot, which thinks and answers like human beings using recurrent neural networks. \\
-Link: \href{https://github.com/prabhakaran9397/cip}{github.com/prabhakaran9397/cip} \\
-Software used: TensorFlow (Python) \\
+\textbf\Large{Sri Sitaram Vidyalaya Mat. Hr. Sec. School} \hfill 2002 - 2014 \\
+\textit{XII - Higher Secondary Examination} - \textbf{94.58 \%} \\
+\textit{X - Secondary Examination} - {\textbf{96.00 \%}}
+\vspace{2pt}
+\section{\LARGE{Experience}}
+\textit{Summer Internship } \hfill May 2017 - June 2017 \\
+\textbf {CaratLane Trading Private Limited} \\
+Optimization of web-stack and API Development for CRM Software. \\
+Technologies Used: Ruby on Rails, MySQL, ElasticSearch
+%---------------------------------------------------------
+\section{\LARGE{Projects}}
+{\textit{\textbf{AI ChatBot - Using Deep Learning}}} \hfill Jan 2017 - Mar 2017 \\
+A chatbot that answers like a person, on which it is trained. Developed using Recurrent Neural Network (LSTM) along with AIML module to ease the conversation.\\
+URL: \href{https://github.com/prabhakaran9397/cip}{github.com/prabhakaran9397/cip} \\
+Technologies Used: TensorFlow (Python) \\
 \\
-{\sl AirLock} \hfill Aug 2015 - Feb 2016 \\
-Electronic pattern lock, designed and developed with a WebApp. This project was funded by the Kurukshetra Project Management, and has \textbf{UNESCO Patronage}.\\
-Software \& Tool used: Arduino, Ruby on Rails, ESP8266 Wi-Fi module \\
+{\textit{\textbf{AirLock}}}\hfill Aug 2015 - Feb 2016 \\
+An electronic pattern lock, which detects the patterns drawn in air using IR sensors. I designed the algorithm for pattern recognition and configured the REST API to make it wireless. This project has \textbf{UNESCO Patronage}.\\
+Technologies Used:  Arduino, Ruby on Rails\\
 \\
-{\sl \href{acoe.annauniv.edu}{ACOE} Result - CLI} \hfill Aug 2016 - Sep 2016 \\
-Minimal interface for semester result which handles basic-auth, cookies and form-tokens and connection to the ACOE backend.\\
-Link: \href{https://github.com/lost-plus-found/ACOE-Result-Command-Line}{github.com/lost-plus-found/ACOE-Result-Command-Line} \\
-Software used: Shell, Python
-%----------------------------------------------------------------------------------------
-%   PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\section{WEBAPPS}
-{\sl CEG Website} \hfill Sep 2015 - Feb 2015 \\
-Link: \href{http://ceg.annauniv.edu}{ceg.annauniv.edu} \\
-Software used: Ruby on Rails, PHP \\
+{\textit{\textbf{Think42 Labs}} \hfill Oct 2016 - Dec 2016 \\
+WebApp with admin panel secured by two step verification, protection against CSRF and auto mailer.\\
+URL: \href{http://think42labs.com}{think42labs.com} \\
+Technologies Used: Flask (Python)\\
 \\
-{\sl Maxican Export} \hfill May 2016 - Jun 2016 \\
-Key Features: Admin-panel secured by two step authentication. \\
-Link: \href{http://maxicanexport.com}{maxicanexport.com} \\
-Software used: PHP, MySQL \\
+{\textit{\textbf{Lost+Found}}} (\href{https://github.com/lost-plus-found}{github.com/lost-plus-found}) \hfill Aug 2016 - Present \\
+\textit{\href{https://github.com/lost-plus-found/ACOE-Result-Command-Line}{\textbf{ACOE-Result-Command-Line}}}:Fetches semester examination results automatically from deep web. Handled password-hashing, cookies using Python, CURL and OpenSSL.\\
+\textit{\href{https://github.com/lost-plus-found/notify-me-telegram}{\textbf{notify-me-telegram}}}: A wrapper to send text messages from the Command Line to Telegram using CURL and Telegram Bot API.\\
+\textit{\href{https://github.com/lost-plus-found/transfer-x}{\textbf{Transfer-X}}}: A tool to transfer data in intra-net developed using Zip, HTTP-Server (Python) and Bash.\\
 \\
-{\sl Think42 Labs} \hfill Oct 2016 - Dec 2016 \\
-Key Features: Protection against CSRF and auto mailer.\\
-Link: \href{http://think42labs.com}{think42labs.com} \\
-Software used: Python-Flask
+{\textit{\textbf{User Tracking App - Using Docker}} \hfill Oct 2016 - Dec 2016 \\
+A WebApp, hosted using docker container; which tracks the user login behaviour.\\
+URL: \href{https://gitlab.com/prabhakaran9397/ktask-17}{gitlab.com/prabhakaran9397/ktask-17} \\
+Technologies Used: ExpressJS, Docker.
 %----------------------------------------------------------------------------------------
 %   CLUBS AND ACTIVITIES SECTION
 %---------------------------------------------------------------------------------------- 
-\section{CLUBS \& \\ ACTIVITIES}
+\section{CLUBS \& ACTIVITIES}
 \begin{itemize}
-\item \textbf{Student Director of Tech} at CEG Tech Forum \\
-CTF is an ISO certified organisation, with UNESCO patronage, that conducts CEG's official Tech Fest, \sl{Kurukshetra} and I'm the skipper for Backend Development, Internal Applications and Tech Operations.
-\item \textbf{DevOps} at Department of CSE \\
-Developing scripts for DCSE to properly install and configure third-party softwares in labs.
-\item \textbf{Core Member} of CEGLUG (CEG Linux Users Group) \\
-A group of GNU/Linux enthusiasts dedicated to promote Free and Open Source Software by organizing many activities and events.
+\item \textit{Student Director of Tech} at \textbf{CEG Tech Forum}\\
+CTF is an ISO certified organization, with UNESCO patronage, that conducts CEG's official Tech Fest, \textbf{\textit{Kurukshetra}} and I'm the skipper for Backend Development, Internal Applications and Tech Operations.
+\item \textit{Core Member} of \textbf{CEG Linux Users Group} \\
+An active member of CEGLUG, where I have conducted classes on GNU Coreutils, Linux basics, Python, Ruby on Rails and PGP.
+\item \textbf{Hackathons} \\
+ \textbf{ProbHub:} Platform for problem and solution sharing built using Ruby on Rails and Telegram Bot API in \textit{36 hours}.\\
+ \textbf{DocBot:} AI Chat bot for medical diagnostics developed using NLP and ML in \textit{24 hours}. (https://github.com/cfd-17/helloworld)
 \end{itemize}
 %----------------------------------------------------------------------------------------
-%   HOBBIES SECTION
+%   TECHNICAL SKILLS SECTION
 %----------------------------------------------------------------------------------------
-\section{HOBBIES}
-Cycling, Trekking, Athletics, Puzzle Solving, Movies.
-%----------------------------------------------------------------------------------------
-%       PERSONAL DETAILS SECTION
-%----------------------------------------------------------------------------------------
-\section{PERSONAL DETAILS}
-Date of Birth \hspace{18pt} : 09/03/1997 \\
-Languages Known \hspace{1pt}: English, Tamil
-\end{resume}
+\section{\LARGE{Technical Skills}} 
+\textit{Programming Languages:} C, C++, Ruby, Python, Java, PHP \\
+\textit{Markup Languages:} HTML, Markdown, LaTeX \\
+\textit{Frameworks:} Ruby on Rails, Python-Flask, ExpressJS \\
+\textit{Databases:} MySQL, MongoDB \\
+\textit{Tools:} GNU Coreutils, Git, Vim, Lex \& Yacc
 \end{document}
